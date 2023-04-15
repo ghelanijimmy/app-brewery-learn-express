@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ghelanijimmy/app-brewery-learn-express/issues"
   },
-  "homepage": "https://github.com/ghelanijimmy/app-brewery-learn-express#readme"
+  "homepage": "https://github.com/ghelanijimmy/app-brewery-learn-express#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
