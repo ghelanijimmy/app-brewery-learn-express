@@ -1,10 +1,13 @@
 import express from "express";
+import dotenv from "dotenv";
 import calculator from "./calculator";
 import weather from "./weather/weather";
 import newsletter from "./newsletter/newsletter";
+import bodyParser from "body-parser";
+import process from "process";
 
+dotenv.config();
 const app = express();
-const bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded());
 
@@ -20,6 +23,4 @@ app.get("/", (req, res) => {
   );
 });
 
-app.listen(3000, () => {
-  console.log("Now Running at port 3000");
-});
+app.listen(process.env.PORT || 3000);
