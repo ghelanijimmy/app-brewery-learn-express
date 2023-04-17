@@ -1,9 +1,10 @@
-const express = require('express');
-const path = require("path");
+import express from "express";
+import path from "path";
+import process from "process";
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '.', 'index.html'))
+    res.sendFile(path.join(process.cwd(), '.', 'index.html'))
 })
 
 router.post('/', (req, res) => {
@@ -12,5 +13,4 @@ router.post('/', (req, res) => {
     const total = num1 + num2;
     res.send(`<h1>The result of the calculation is ${total}</h1>`);
 })
-
-module.exports = router;
+export default router;
