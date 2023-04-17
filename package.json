@@ -4,9 +4,8 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc -p ./src",
-    "start": "nodemon dist/server.js",
-    "dev": "concurrently \"tsc -p ./tsconfig.json --watch\" \"nodemon dist/server.js\" "
+    "build": "tsc -p ./tsconfig.json",
+    "start": "nodemon src/server.ts"
   },
   "repository": {
     "type": "git",
