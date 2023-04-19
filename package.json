@@ -1,11 +1,12 @@
 {
-  "name": "learn-express",
+  "name": "app-brewery-learn-express",
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
-    "start": "nodemon src/server.ts"
+    "start": "nodemon src/server.ts",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
     "concurrently": "^8.0.1",
     "dotenv": "^16.0.3",
     "eslint": "^8.38.0",
