@@ -1,5 +1,5 @@
 {
-  "name": "learn-express",
+  "name": "app-brewery-learn-express",
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
