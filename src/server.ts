@@ -15,12 +15,6 @@ app.use("/calculator", calculator);
 
 app.use("/weather", weather);
 
-app.use("/newsletter", newsletter);
-
-app.get("/", (req, res) => {
-  res.send(
-    "<div><ul><li><a href='/calculator'>Calculator Route</a></li><li><a href='/weather'>Weather Route</a></li><li><a href='newsletter'>Newsletter</a></li></ul></div>"
-  );
-});
+app.use("/", newsletter);
 
 app.listen(process.env.PORT || 3000);

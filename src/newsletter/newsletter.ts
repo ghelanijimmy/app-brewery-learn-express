@@ -12,6 +12,7 @@ router.use(express.static("public"));
 router.get("/", (req, res) => {
   res.sendFile(path.join(process.cwd(), "src", "newsletter", "signup.html"));
 });
+
 router.post("/", (req, res) => {
   const firstName = req.body.fname;
   const lastName = req.body.lname;
@@ -56,7 +57,7 @@ router.post("/", (req, res) => {
 });
 
 router.post("/failure", (req, res) => {
-  res.redirect("/newsletter");
+  res.redirect("/");
 });
 
 export default router;
